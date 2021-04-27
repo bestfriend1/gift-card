@@ -1,0 +1,123 @@
+ 
+ /*defualt-css */
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+span,i{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.container{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+/* start-main-coding */
+
+.gift-card{
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.gift-card-title{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.gift-card-left{
+    float: left;
+    width: 60%;
+    text-align: left;
+}
+.gift-card-right{
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+.gift-card-left h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family: 'Rubik',sans-serif;
+    color: #111;
+    position: relative;
+    z-index: 10;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+.gift-card-left h1:after{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 3px;
+    background-color:#8db654;
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+}
+.gift-card-right a{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 8px 18px;
+    border:1px solid red;
+    color: red;
+    border-radius: 5px;
+    font-style: normal;
+    font-family: 'Rubik',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s linear;
+    margin-top: 8px;
+}
+.gift-card-right a span{
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 3px;
+    position: relative;
+    top: 0px;
+}
+.gift-card-right a:hover{
+    background-color: red;
+    color: #fff;
+}
+.gift-card-details{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap:15px 20px;
+}
+.gift-card-img img{
+    height: 350px;
+    width: 100%;
+}

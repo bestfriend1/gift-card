@@ -1,0 +1,24 @@
+@media(max-width:991px){
+    .gift-card-details{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .gift-card-img img{
+        height: 400px;
+    }
+}
+@media(max-width:756px){
+    .gift-card-details{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gift-card-img img{
+        height: 400px;
+    }
+}
+@media(max-width:550px){
+    .gift-card-details{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .gift-card-img img{
+        height: 400px;
+    }
+}
