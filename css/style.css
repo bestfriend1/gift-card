@@ -89,7 +89,9 @@ img{
 .gift-card-right a{
     display: inline-block;
     box-sizing: border-box;
-    padding: 8px 18px;
+    padding: 8px 0px;
+    max-width: 130px;
+    width: 100%;
     border:1px solid red;
     color: red;
     border-radius: 5px;
@@ -99,6 +101,7 @@ img{
     font-weight: 400;
     transition: all 0.3s linear;
     margin-top: 8px;
+    text-align: center;
 }
 .gift-card-right a span{
     display: inline-block;
@@ -114,11 +117,14 @@ img{
 .gift-card-details{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap:15px 20px;
+    grid-gap:20px 20px;
 }
 .gift-card-img img{
-    height: 340px;
-    max-width: 100%;
-    margin: auto;
-    
+    height: 380px;
+    width: 100%;
+    object-fit: contain;
+    transition: all 0.3s linear;
+}
+.gift-card-img img:hover{
+    transform: translateY(-10px);
 }

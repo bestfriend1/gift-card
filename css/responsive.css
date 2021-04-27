@@ -21,4 +21,7 @@
     .gift-card-img img{
         height: 400px;
     }
+    .gift-card-img img:hover{
+        transform: translateY(0px);
+    }
 }
