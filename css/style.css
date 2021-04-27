@@ -78,7 +78,7 @@ img{
 .gift-card-left h1:after{
     content: "";
     display: block;
-    width: 130px;
+    width: 150px;
     height: 3px;
     background-color:#8db654;
     position:absolute;
