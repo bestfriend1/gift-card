@@ -23,5 +23,6 @@
     }
     .gift-card-img img:hover{
         transform: translateY(0px);
+        display: block;
     }
 }
